@@ -1,0 +1,105 @@
+.footer-index{
+
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $colorSecundario;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    @include tablet{
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    .ubicacion-index{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: "Jost", sans-serif;
+            font-weight: 800;
+            font-size: 17px;
+
+            &:hover{
+                color: $colorSecundario;
+            }
+        }
+    }
+
+    .ubicacion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: "Jost", sans-serif;
+            font-weight: 800;
+            font-size: 17px;
+        }
+
+        &:hover{
+            color: $colorDetalles;
+        }
+
+        @include tablet{
+            display: none;
+        }
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        img{
+            @include mobile{
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @include mobile{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .creditos{
+        text-align: center;
+        justify-content: center;
+        color: $colorDetalles;
+        font-family: Arial, Helvetica, sans-serif;
+
+        @include mobile{
+            margin-top: 5px;
+        }
+        
+
+        p{
+            margin-bottom: 0px;
+        }
+    }
+    
+}

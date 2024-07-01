@@ -1,0 +1,126 @@
+:root {
+    --color_primario: yellow;
+    --color_primario_suave: rgba(255, 255, 0, 0.904);
+    --color_blanco: #fff;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+body{
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+    text-align: center;
+}
+.menu_hamburguesa{
+    display: none;
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+h1{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: "Jost", sans-serif;
+
+    &:hover{
+        color:red;
+    }
+}
+.list_icon {
+    color: red;
+    cursor: pointer;
+}
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all .3s;
+}
+
+.link {
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
+
+@media (min-width:768px){
+    .labe_hamburguesa {
+        display: none;
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 0px;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+
+        &:hover{
+            color:red;
+        }
+    }
+    h1{
+        display: none;
+    }
+    .navbar{
+        margin-left: -10px;
+    }
+}
+
+@media (min-width:1440px){
+    h1{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .ul_links {
+        gap: 2rem;
+    }
+}
+
+header{
+    nav{
+        a{
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.main-contacto{
+    background-color: $colorMain;
+
+    @include mobile{
+        height: 100vh;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+
+    }
+    
+    .contact-form {
+        background-color: $colorSecundario;
+        padding: 50px;
+        border-radius: 5px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        @media(max-width:580px){
+            width: 380px;
+        }
+
+        @include mobile{
+            width: 280px;
+            height: 50vh;
+        }
+    }
+
+    .form-division {
+        button{
+            color: black;
+            height: 40px;
+            width: 90px;
+            background-color: $colorDetalles;
+            border-radius: 5px;
+            font-family: "Jost", sans-serif;
+            font-size: 18px;
+            border: 2px solid black;
+            margin-top: 30px;
+        }
+    }
+
+    :placeholder-shown{
+        padding: 3px;
+        font-family: "Jost", sans-serif;
+        font-size: 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+}

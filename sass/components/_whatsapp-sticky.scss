@@ -1,0 +1,14 @@
+.whatsapp_sticky{
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+
+    @include mobile{
+        display: none;
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+    }
+}

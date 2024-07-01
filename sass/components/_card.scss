@@ -1,0 +1,136 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: $colorMain;
+    border: 3px solid black;
+    position: unset;
+    width: 300px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+
+    @media(max-width:1439px){
+        width: 250px;
+    }
+
+    @include tablet{
+        margin: 10px;
+        width: 200px;
+        border: 3px solid black;
+    }
+
+    @include mobile{
+        width: 175px;
+        border: 2px solid black;
+    }
+
+    @media (max-width:375px){
+        width: 130px;
+    }
+
+    img{
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        border-radius: 5px;
+
+        @media(max-width:1439px){
+            width: 200px;
+            height: 200px;
+        }
+
+        @include tablet{
+                width: 150px;
+                height: 150px;
+            }
+
+        @media (max-width:375px){
+            width: 110px;
+            height: 110px;
+        }
+    }
+
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            margin: 5px;
+            margin-top: 15px;
+            font-family: "Noto Sans Display", sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: black;
+
+            @include tablet{
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+            @include mobile{
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+
+        p{
+            color: black;
+            font-family: "Noto Sans Display", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 40px;
+
+            @include tablet{
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+
+            @include mobile{
+                font-size: 11px;
+                margin-bottom: 10px;
+                line-height: 30px;
+            }
+        }
+
+        button{
+            margin-bottom: 20px;
+            background-color: black;
+            height: 40px;
+            width: 160px;
+            font-family: "Noto Sans Display", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            font-style: none;
+            border-radius: 10px;
+            color: white;
+            border: 3px solid black;
+
+            &:hover{
+                background-color: $colorDetalles;
+                color: black;
+            }
+
+            @include tablet{
+                height: 35px;
+                width: 140px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            @include mobile{
+                height: 30px;
+                width: 110px;
+                font-weight: 600;
+                font-size: 13px;
+                border: 2px solid black;
+            }
+
+            @media (max-width:375px){
+                width: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.liga-caballeros{
+
+    margin-bottom: 5px;
+    
+    .plantel-mobile{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+        margin-bottom: -5px;
+
+        @include tablet{
+            margin-top: -3px;
+        }
+
+        @include mobile{
+            margin: 0px;
+        }
+    }
+
+    .h1ligas{
+        @include mobile{
+            font-size: 25px;
+        }
+    }
+
+    .desktop-tablet{
+        @include mobile{
+            display: none;
+        }
+
+        @media(max-width:720px){
+            display: none;
+        }
+    }
+
+    .plantel-mobile{
+
+        @media(max-width:720px){
+            display: flex;
+            flex-direction: column;
+            margin-top: 3px;
+        }
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -5px;
+        }
+    }
+}

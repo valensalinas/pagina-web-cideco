@@ -1,0 +1,90 @@
+[
+    {
+        "id": "artcid-00001",
+        "name": "Remera High Runner",
+        "price": 15000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/remera-high-runner.jpg",
+        "description": "Remera de entrenamiento."
+    },
+    {
+        "id": "artcid-00002",
+        "name": "Remera Hummel",
+        "price": 17000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/remera-handball.jpg",
+        "description": "Remera de entrenamiento."
+    },
+    {
+        "id": "artcid-00003",
+        "name": "Medias Hummel",
+        "price": 6000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/media-hummel-blanca.webp",
+        "description": "Medias Pack x3 Blancas."
+    },
+    {
+        "id": "artcid-00004",
+        "name": "Medias Hummel",
+        "price": 50000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/media-hummel-negra.webp",
+        "description": "Medias Pack x3 Negras."
+    },
+    {
+        "id": "artcid-00005",
+        "name": "Camperón CIDECO High Runner",
+        "price": 50000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/camperon.jpg",
+        "description": "Camperón azul."
+    },
+    {
+        "id": "artcid-00006",
+        "name": "Pantalón High Runner",
+        "price": 30000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/pantalon-cideco.jpg",
+        "description": "Pantalón de conjunto azul oscuro."
+    },
+    {
+        "id": "artcid-00007",
+        "name": "Campera CIDECO High Runner",
+        "price": 25000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/campera-roja.jpg",
+        "description": "Campera de conjunto roja."
+    },
+    {
+        "id": "artcid-00008",
+        "name": "Short High Runner de Juego",
+        "price": 16000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/short-high-runner.webp",
+        "description": "Short de juego largo negro para caballeros, con escudo de High Runner."
+    },
+    {
+        "id": "artcid-00009",
+        "name": "Short High Runner de Juego",
+        "price": 16000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/short-high-runner.webp",
+        "description": "Short de juego negro corto para damas, con escudo de High Runner."
+    },
+    {
+        "id": "artcid-00010",
+        "name": "Media de compresión Hummel",
+        "price": 8000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/media-de-compresion-negra.webp",
+        "description": "Media de compresión x2 de color negro."
+    },
+    {
+        "id": "artcid-00011",
+        "name": "Media de compresión Hummel",
+        "price": 8000,
+        "available_quantity": 20,
+        "img": "../assets/img/productos/media-de-compresion-blanca.webp",
+        "description": "Media de compresión x2 de color blanco."
+    }
+]
